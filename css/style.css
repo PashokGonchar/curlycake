@@ -111,7 +111,17 @@ body {
   color: var(--active-color);
 }
 
+/* ПРО МЕНЯ */
+
+.about-me {
+    margin-bottom: 60px;
+}
+
 /* КАТАЛОГ */
+
+.section {
+    margin-bottom: 60px;
+}
 
 .main-menu,
 .main-text {
@@ -152,3 +162,12 @@ body {
 .cake .list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
+/* ПОДВАЛ */
+
+.footer {
+    display: flex;
+}
+.container .text {
+    display: flex;
+    align-items: center;
