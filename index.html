@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curlycake</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabriela&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <a href="index.html">
-        <img src="images/curlycake_logo.jpg" alt="Логотип" width="150" />
+    <header class="header container">
+      <a class="link" href="index.html">
+        <img src="images/curlycake_logo.jpg" alt="Логотип" width="100" />
       </a>
-      <nav>
-        <ul>
-          <li><a href="cake.html">Торти</a></li>
-          <li><a href="bento.html">Бенто</a></li>
-          <li><a href="#">Трайфл</a></li>
-          <li><a href="#">Декор</a></li>
+      <nav class="nav">
+        <ul class="item">
+          <li class="list"><a class="link" href="cake.html">Торти</a></li>
+          <li class="list"><a class="link" href="bento.html">Бенто</a></li>
+          <li class="list"><a class="link" href="#">Трайфл</a></li>
+          <li class="list"><a class="link" href="#">Декор</a></li>
         </ul>
       </nav>
-      <address>
-        <a href="tel:+380996465227">Зателефонуй</a>
-        <a href="https://instagram.com/curlycake_ua?igshid=MDM4ZDc5MmU="
+      <address class="address">
+        <a class="link" href="tel:+380996465227">Зателефонуй</a>
+        <a class="link" href="https://instagram.com/curlycake_ua?igshid=MDM4ZDc5MmU="
           >Напиши в Instagram</a
         >
       </address>
@@ -32,7 +42,7 @@
       </section>
     </header>
     <!-- Основное меню -->
-    <main>
+    <main class="container">
       <!-- Про мене -->
       <section>
         <h1>Про мене</h1>
@@ -147,6 +157,6 @@
       </section>
     </main>
     <!-- Подвал сайта -->
-    <footer></footer>
+    <footer class="container"></footer>
   </body>
 </html>

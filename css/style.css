@@ -1,24 +1,100 @@
-a {
-    text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
-    list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-.cake h3,
-.bento-cake h3 {
-    color: red;
+.list {
+  list-style: none;
 }
 
-#pie, #bento {
-    color: blueviolet;
+.link {
+  text-decoration: none;
 }
 
-h2 {
-    color: crimson;
+img {
+  display: block;
 }
 
-p {
-    color: rgb(3, 65, 28);
+:root {
+  --primary-font: 'Gabriela', serif;
+  --secondary-font: 'Playfair Display', serif;
+  --primary-color: #222661;
+  --secondary-color: #020641;
+  --active-color: #159415;
+  --button-color: #6c76e7;
+  --button-active-color: #5d92d6;
+  --black-color: #000;
+  --white-color: #fff;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ШАПКА САЙТА */
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav {
+  display: flex;
+}
+.nav {
+  margin-left: 80px;
+}
+
+.nav .item {
+  display: flex;
+}
+
+.address {
+  margin-left: auto;
+}
+
+.item .link {
+    display: block;
+  font-family: var(--primary-font);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list .link:hover,
+.list .link:focus {
+  color: var(--active-color);
+}
+
+.item .list:not(:last-child) {
+  margin-right: 40px;
+}
+
+.address .link {
+  font-style: normal;
+}
+
+.address .link:not(:last-child) {
+  margin-right: 20px;
 }
