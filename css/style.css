@@ -74,6 +74,7 @@ body {
 .item .link {
     display: block;
   font-family: var(--primary-font);
+  color: var(--secondary-color);
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
@@ -93,6 +94,14 @@ body {
 
 .address .link {
   font-style: normal;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .address .link:not(:last-child) {
