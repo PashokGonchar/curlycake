@@ -40,6 +40,9 @@ img {
 body {
   font-family: var(--primary-font);
   color: var(--primary-color);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .container {
@@ -54,11 +57,9 @@ body {
 .header {
   display: flex;
   align-items: center;
+  padding-bottom: 72px;
 }
 
-.header .nav {
-  display: flex;
-}
 .nav {
   margin-left: 80px;
 }
@@ -72,15 +73,12 @@ body {
 }
 
 .item .link {
-    display: block;
-  font-family: var(--primary-font);
+  display: block;
+  font-family: var(--secondary-font);
   color: var(--secondary-color);
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .list .link:hover,
@@ -94,7 +92,7 @@ body {
 
 .address .link {
   font-style: normal;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   color: var(--secondary-color);
   padding-top: 24px;
   padding-bottom: 24px;
@@ -106,4 +104,51 @@ body {
 
 .address .link:not(:last-child) {
   margin-right: 20px;
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--active-color);
+}
+
+/* КАТАЛОГ */
+
+.main-menu,
+.main-text {
+  display: block;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.main-text {
+  margin-bottom: 40px;
+}
+
+.cake {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cake .list {
+  background: #ffffff;
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  margin-bottom: 48px;
+  margin-right: 24px;
+}
+
+.list .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid rgb(46 47 66 / 8%);
+  border-left: 1px solid rgb(46 47 66 / 8%);
+  border-bottom: 1px solid rgb(46 47 66 / 8%);
+}
+
+.cake .list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.cake .list:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
