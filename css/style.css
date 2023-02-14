@@ -66,6 +66,18 @@ body {
   border-radius: 10px;
 }
 
+.logo {
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+
 .nav {
   margin-left: 80px;
 }
