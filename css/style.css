@@ -30,7 +30,7 @@ img {
   --secondary-font: 'Playfair Display', serif;
   --primary-color: #222661;
   --secondary-color: #020641;
-  --active-color: #159415;
+  --active-color: #e0e246;
   --button-color: #6c76e7;
   --button-active-color: #5d92d6;
   --black-color: #000;
@@ -43,7 +43,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  background-color: #e5ffaa;
+  background-color: #f0def9;
 }
 
 .container {
@@ -58,7 +58,12 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding-bottom: 72px;
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+  background-color: #e5c1f7;
+  width: 1128px;
+  border-radius: 10px;
 }
 
 .nav {
@@ -116,6 +121,8 @@ body {
 
 .about-me {
   margin-bottom: 60px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 /* КАТАЛОГ */
@@ -145,15 +152,16 @@ body {
   flex-basis: calc((100% - 2 * 24px) / 3);
   margin-bottom: 48px;
   margin-right: 24px;
-  background-color: #eafcc1;
-    border-bottom: 1px solid rgb(46 47 66 / 8%);
+  background-color: #e6ccf3;
+  border-bottom: 1px solid rgb(46 47 66 / 8%);
+ border-radius: 10px;
 }
 
 .list .item {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-    border-right: 1px solid rgb(46 47 66 / 8%);
+  border-right: 1px solid rgb(46 47 66 / 8%);
   border-left: 1px solid rgb(46 47 66 / 8%);
 }
 
