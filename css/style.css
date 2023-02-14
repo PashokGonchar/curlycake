@@ -77,6 +77,13 @@ body {
   transform: rotate(360deg);
 }
 
+.scale {
+transition-property: transform;
+}
+
+.scale:hover {
+transform: scale(1.5);
+}
 
 .nav {
   margin-left: 80px;
