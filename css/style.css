@@ -52,7 +52,7 @@ body {
 
 .container {
   position: relative;
-  width: 1158px;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -213,7 +213,7 @@ body {
   position: fixed;
   z-index: 100;
   bottom: 24px;
-  right: 24px;
+  right: 15%;
 }
 
 .order-btn {
