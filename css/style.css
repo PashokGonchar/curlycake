@@ -236,7 +236,10 @@ body {
 .cake-cards-link:focus .overlay {
   transform: translate(0, 0);
 }
-
+.cake-cards-link.link:hover,
+.cake-cards-link.link:focus {
+  color: #222661;
+}
 
 /* ПОДВАЛ */
 
