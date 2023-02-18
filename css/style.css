@@ -171,6 +171,11 @@ body {
   flex-wrap: wrap;
 }
 
+.head {
+  text-align: center;
+  justify-content: center;
+}
+
 .cake .list {
   background: #ffffff;
   flex-basis: calc((100% - 2 * 24px) / 3);
@@ -196,6 +201,42 @@ body {
 .cake .list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
+
+.cake-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+  transform: translate(0, 100%);
+  transition: transform;
+  transition-timing-function: cubic-bezier(0.2, 0, 0.2, 1);
+  transition-duration: 300ms;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: white;
+  background-color: rgb(137, 23, 230);
+  background-blend-mode: soft-light;
+  mix-blend-mode: normal;
+
+  padding: 40px 32px ;
+}
+
+.cake-cards-link:hover .overlay,
+.cake-cards-link:focus .overlay {
+  transform: translate(0, 0);
+}
+
 
 /* ПОДВАЛ */
 
