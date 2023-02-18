@@ -202,7 +202,6 @@ body {
   margin-bottom: 0;
 }
 
-
 .cake-wrapper {
   position: relative;
   overflow: hidden;
@@ -229,7 +228,7 @@ body {
   background-blend-mode: soft-light;
   mix-blend-mode: normal;
 
-  padding: 40px 32px ;
+  padding: 40px 32px;
 }
 
 .cake-cards-link:hover .overlay,
@@ -238,7 +237,7 @@ body {
 }
 .cake-cards-link.link:hover,
 .cake-cards-link.link:focus {
-  color: #222661;
+  color: #f5400a;
 }
 
 /* ПОДВАЛ */
