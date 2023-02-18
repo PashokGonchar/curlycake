@@ -25,6 +25,10 @@ img {
   display: block;
 }
 
+button {
+  cursor: pointer;
+}
+
 :root {
   --primary-font: 'Gabriela', serif;
   --secondary-font: 'Playfair Display', serif;
@@ -47,6 +51,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
@@ -78,11 +83,11 @@ body {
 }
 
 .scale {
-transition-property: transform;
+  transition-property: transform;
 }
 
 .scale:hover {
-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .nav {
@@ -173,7 +178,7 @@ transform: scale(1.5);
   margin-right: 24px;
   background-color: #e6ccf3;
   border-bottom: 1px solid rgb(46 47 66 / 8%);
- border-radius: 10px;
+  border-radius: 10px;
 }
 
 .list .item {
@@ -204,6 +209,20 @@ transform: scale(1.5);
 
 /* КНОПКА ЗАМОВЛЕННЯ ЗАКАЗУ */
 
+.order {
+  position: fixed;
+  z-index: 100;
+  bottom: 24px;
+  right: 24px;
+}
+
+.order-btn {
+  display: block;
+  border-radius: 10px;
+  border: #0000001a;
+  background-color: #dc4ef8;
+}
+
 .backdrop {
   position: fixed;
   z-index: 100;
@@ -216,7 +235,6 @@ transform: scale(1.5);
   transition: opacity, visibility, transform;
   transition-timing-function: cubic-bezier(0.2, 0, 0.2, 1);
   transition-duration: 250ms;
-  
 }
 
 .backdrop.is-hidden {
@@ -249,7 +267,7 @@ transform: scale(1.5);
   border: #0000001a;
   border-radius: 50%;
   padding: 0;
-  background-color: var(--cornflower-color);
+  background-color: rgb(168, 109, 228);
 
   position: absolute;
   top: 24px;
@@ -262,7 +280,7 @@ transform: scale(1.5);
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: var(--ocean-color);
+  background-color: rgb(248, 7, 7);
   fill: var(--white-color);
 }
 

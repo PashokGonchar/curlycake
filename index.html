@@ -22,7 +22,7 @@
     <header class="header container">
       <div class="logo">
         <a class="link" href="index.html">
-          <img src="images/curlycake_logo.jpg" alt="Логотип" width="100" />
+          <img src="images/curlycake_logo.png" alt="Логотип" width="100" />
         </a>
       </div>
       <nav class="nav">
@@ -216,9 +216,27 @@
     <!-- Подвал сайта -->
     <footer class="footer container">
       <a class="link" href="index.html">
-        <img src="images/curlycake_logo.jpg" alt="Логотип" width="100" />
+        <img src="images/curlycake_logo.png" alt="Логотип" width="100" />
       </a>
       <p class="text">Створено з коханням для всіх нас. &#127482;&#127462;</p>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-btn">
+            <use href="images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="order">
+        <button type="button" class="order-btn" data-modal-open>З'ЇЖ МЕНЕ</button>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
